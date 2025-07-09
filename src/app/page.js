@@ -5,11 +5,11 @@ import HoldingsTable from "@/components/HoldingsTable";
 import InsightsSection from "@/components/InsightsSection";
 
 import { userSummary, assetAllocation, holdings } from "@/data/portfolioData";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div>
-      <Header />
       <main className="px-4 md:px-8 py-6 space-y-6">
         <UserSummaryCard data={userSummary} />
         <AssetAllocationChart data={assetAllocation} />
